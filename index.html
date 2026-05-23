@@ -142,6 +142,7 @@
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
     gap: 12px;
+    flex-wrap: wrap;
   }
   .person-row:last-of-type { border-bottom: none; }
   .person-name {
@@ -164,7 +165,7 @@
     padding: 3px 8px;
     border-radius: 20px;
   }
-  .toggle-group { display: flex; gap: 8px; flex-shrink: 0; }
+  .toggle-group { display: flex; gap: 8px; flex-shrink: 0; margin-left: auto; }
   .toggle-btn {
     padding: 7px 18px;
     border-radius: 2px;
@@ -177,6 +178,7 @@
     cursor: pointer;
     transition: all 0.2s;
     color: var(--muted);
+    white-space: nowrap;
   }
   .toggle-btn:hover { border-color: var(--gold-light); color: var(--dark); }
   .toggle-btn.sim.active { background: var(--green); border-color: var(--green); color: #fff; }
